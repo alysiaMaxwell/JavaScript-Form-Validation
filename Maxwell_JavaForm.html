@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<title> Deliverable_5</title>
+
+</head>
+
+
+<script>
+
+function validateForm() 
+{
+  var x = document.forms["customerInfomation"]["firstname"].value;
+  if (x == "")
+  {
+    alert("First name must be filled out");
+    return false;
+  }
+  
+}
+</script>
+
+
+<body>
+
+<h1> Customer Information </h1>
+
+
+<form  id="customerInfomation" onsubmit="return validateForm()" method="post" >
+
+<p title = "User Information"> 
+
+  First Name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last Name:<br>
+  <input type="text" name="lastname">
+  <br>
+  Email:<br>
+  <input type="text" name="email">
+  <br><br>
+  
+<input type="submit" onclick="validateForm" value="Submit" >
+
+</p>
+</form>
+</body>
+
+
+</html>
+
